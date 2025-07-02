@@ -11,25 +11,21 @@ The project is built with **React**, uses **React Router** for navigation, and s
 
 ## 📁 Project Structure
 
-simple-landing-signup/
-├── public/                         # Static files served directly
-│   └── index.html                  # Main HTML file
-│
-├── src/                            # All source code
-│   ├── components/                # UI components (reusable)
-│   │   ├── Navbar.jsx            # Top navigation bar
-│   │   ├── SimpleSignup.jsx      # Simple sign-up form
-│   │   └── DragDropSignup.jsx    # Drag-and-drop sign-up form
-│
-│   ├── App.jsx                    # Main App component with routing
-│   ├── main.jsx                   # React entry point
-│   └── index.css                  # Global styling
-│
-├── .gitignore                     # Ignore node_modules and other stuff
-├── package.json                   # Project metadata & dependencies
-├── README.md                      # Project info, usage, and setup
-├── vite.config.js                 # Vite config (if using Vite)
-└── LICENSE (optional)            # Open source license
+Folder/File	Sector	Description
+components/	UI Components	Contains all independent reusable UI elements like Navbar, Forms, etc.
+Navbar.jsx	Navigation	Fixed top menu for navigating between pages
+SimpleSignup.jsx	Auth / Forms	Standard form fields: name, email, password
+DragDropSignup.jsx	File Upload / Forms	Drag-and-drop file interface with preview or filename
+App.jsx	Routing	All routes are defined here (using React Router DOM)
+main.jsx	App Entry	React entry point that mounts <App /> to the DOM
+index.css	Styling	Global styles (background, body, etc.)
+index.html	HTML Template	Main page where React mounts
+vite.config.js	Tooling	Configures Vite for building and serving
+package.json	Dependencies	Lists all npm packages, scripts, metadata
+.gitignore	Git Management	Tells Git what files/folders to ignore
+README.md	Documentation	Contains project overview, setup guide, and usage
+
+
 
 
 yaml
