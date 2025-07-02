@@ -1,0 +1,62 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+html,
+body {
+  background-color: #f8f9fa;
+  color: #333;
+  scroll-behavior: smooth;
+}
+
+/* Button Styles */
+.btn {
+  background-color: #fff;
+  color: #333;
+  padding: 10px 14px;
+  font-size: 13px;
+  border-radius: 30px;
+  border: none;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s ease;
+  width: 200px;
+}
+
+/* Scoped Button Image Styles */
+.btn img {
+  width: 20px; /* Set a default size for images in buttons */
+  height: auto; /* Maintain aspect ratio */
+  margin-left: 10px; /* Space between text and image */
+}
+
+.btn:hover {
+  background-color: #e2e6ea; /* Light background on hover */
+}
+
+.btn.dark-btn {
+  background-color: #212ea0;
+  color: #fff;
+}
+
+.btn.dark-btn:hover {
+  background-color: #1d1f8b; /* Darken the background on hover */
+}
+
+/* Specific Classes for Buttons with Images */
+.btn.with-icon img {
+  width: 20px; /* Define a specific width for icons */
+}
+
+/* Optional: Adding styles for button groups or variations */
+.btn-group {
+  display: flex;
+  gap: 10px; /* Space between buttons in a group */
+}

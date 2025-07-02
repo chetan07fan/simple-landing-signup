@@ -1,0 +1,100 @@
+.testimonials {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  width: 100%;
+  max-width: 1100px;
+  margin: auto;
+  position: relative;
+}
+
+/* Container that holds the entire slider */
+.slider-container {
+  width: 800px; /* Set width to fit two images */
+  overflow: hidden; /* Hide overflow for clean edges */
+}
+
+/* Flex display for horizontal scroll */
+.slider {
+  display: flex;
+  overflow-x: auto; /* Allow horizontal scrolling */
+  scroll-behavior: smooth; /* Smooth scrolling */
+  padding: 10px;
+  width: 100%;
+}
+
+.slider::-webkit-scrollbar {
+  display: none; /* Hide scrollbar */
+}
+
+/* Align items in a horizontal line */
+ul {
+  display: flex; /* Use flexbox for horizontal layout */
+  padding: 0; /* Remove default padding */
+  margin: 0; /* Remove default margin */
+  list-style: none; /* Remove bullet points */
+}
+
+/* Style for each testimonial slide */
+.slide {
+  background: #f9f9f9;
+  padding: 20px;
+  min-width: 380px; /* Width for each testimonial slide */
+  margin: 10px; /* Space around slides */
+  text-align: center; /* Center text */
+  border-radius: 12px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  transition: transform 0.3s ease-in-out; /* Animation for hover */
+}
+
+.slide:hover {
+  transform: scale(1.05); /* Scale on hover */
+}
+
+/* User info styling */
+.user-info img {
+  width: 80px; /* Profile image width */
+  height: 80px; /* Profile image height */
+  border-radius: 50%; /* Circular image */
+  margin-bottom: 10px; /* Space below image */
+}
+
+h3 {
+  margin: 5px 0; /* Margin on heading */
+  font-size: 18px; /* Font size for name */
+  color: #212ea0; /* Name color */
+}
+
+span {
+  font-size: 14px; /* Font size for role */
+  color: gray; /* Role color */
+}
+
+p {
+  font-size: 14px; /* Font size for testimonial */
+  margin-top: 10px; /* Space above testimonial */
+}
+
+/* Navigation buttons for scrolling */
+.nav-btn {
+  background: #007bff; /* Button background color */
+  border: none; /* No border */
+  cursor: pointer; /* Pointer cursor */
+  padding: 10px; /* Padding around button */
+  border-radius: 50%; /* Circular button */
+  display: flex; /* Flexbox for centering */
+  align-items: center; /* Center items */
+  justify-content: center; /* Center content */
+  transition: background 0.3s;
+  width: 5%; /* Transition for hover */
+}
+
+.nav-btn:hover {
+  background: #0056b3; /* Darker blue on hover */
+}
+
+.nav-btn img {
+  width: 30px; /* Width of nav icon */
+  height: 30px; /* Height of nav icon */
+}
