@@ -12,17 +12,25 @@ The project is built with **React**, uses **React Router** for navigation, and s
 ## 📁 Project Structure
 
 simple-landing-signup/
-├── public/
-├── src/
-│ ├── components/
-│ │ ├── Navbar.jsx
-│ │ ├── SimpleSignup.jsx
-│ │ └── DragDropSignup.jsx
-│ ├── App.jsx
-│ ├── main.jsx
-│ └── index.css
-├── package.json
-└── README.md
+├── public/                         # Static files served directly
+│   └── index.html                  # Main HTML file
+│
+├── src/                            # All source code
+│   ├── components/                # UI components (reusable)
+│   │   ├── Navbar.jsx            # Top navigation bar
+│   │   ├── SimpleSignup.jsx      # Simple sign-up form
+│   │   └── DragDropSignup.jsx    # Drag-and-drop sign-up form
+│
+│   ├── App.jsx                    # Main App component with routing
+│   ├── main.jsx                   # React entry point
+│   └── index.css                  # Global styling
+│
+├── .gitignore                     # Ignore node_modules and other stuff
+├── package.json                   # Project metadata & dependencies
+├── README.md                      # Project info, usage, and setup
+├── vite.config.js                 # Vite config (if using Vite)
+└── LICENSE (optional)            # Open source license
+
 
 yaml
 Copy
